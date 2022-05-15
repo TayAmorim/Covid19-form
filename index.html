@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Registro da Vacinação contra a COVID-19</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Registro Para vacinação da COVID-19</legend>
+        <div class="wrapper">
+          <div class="col-a">
+            <label for="name">Nome</label>
+            <div class="cola-name top">
+              <input id="name" type="text" name="name" maxlength="20" />
+              <label for="surname"></label>
+              <input type="text" name="surname" id="surname" />
+            </div>
+          </div>
+          <div class="col-b">
+            <label for="cpf">Número de Identificação (CPF) </label>
+            <div class="colb-cpf top">
+              <input type="number" id="cpf" name="cpf" />
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="col-a">
+            <label for="birth">Data de nascimento</label>
+            <div class="cola-date top">
+              <input type="date" name="birth" id="birth" />
+            </div>
+          </div>
+          <div class="col-b">
+            <label for="gendersele">Gênero</label>
+            <div class="colb-gender top">
+              <div>
+                <input id="fem" name="gender" type="radio" />
+                <label for="fem">Feminino</label>
+              </div>
+              <div>
+                <input id="masc" name="gender" type="radio" />
+                <label for="masc">Masculino</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="col-a">
+            <label for="email">E-mail</label>
+            <div class="cola-email top">
+              <input
+                type="email"
+                name="contact"
+                id="email"
+                placeholder="exemplo@exemplo.com"
+                autocomplete="email"
+              />
+            </div>
+          </div>
+          <div class="col-b">
+            <label for="tel">Telefone</label>
+            <div class="colb-tel top">
+              <input
+                type="tel"
+                id="tel"
+                name="contact"
+                placeholder="(00 00000-0000)"
+                autocomplete="tel"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="col-c">
+            <label for="address">Endereço</label>
+            <div class="colc-adress top">
+              <input type="address" id="address" name="address" max size="80" />
+              <label for="cont-address"></label>
+              <input
+                type="text"
+                id="cont-adress"
+                name="address"
+                max
+                size="80"
+                placeholder="Continuação"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="col-a">
+            <label for="cidade">Cidade</label>
+            <div class="cola-city top">
+              <input type="text" id="cidade" name="address" />
+            </div>
+          </div>
+          <div class="col-b">
+            <label for="estado">Estado</label>
+            <div class="colb-est top">
+              <input type="text" id="estado" name="address" />
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <label for="cep">CEP / Código Postal</label>
+          <div class="col-c top colc-cep">
+            <input type="text" id="cep" name="address" />
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="col-a">
+            <label for="health-insurance">Plano de Saúde</label>
+            <div class="cola-health top">
+              <input type="text" id="health-insurance" name="health" />
+            </div>
+          </div>
+          <div class="col-b">
+            <label for="health-number">Número de identificação do Plano</label>
+            <div class="colb-hnumber top">
+              <input type="text" id="health-number" name="health" />
+            </div>
+          </div>
+        </div>
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

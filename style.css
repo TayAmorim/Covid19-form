@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-text: hsl(197, 96%, 18%);
+  --border: hsl(222, 14%, 75%);
+  --text-input: hsl(227, 29%, 64%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+}
+
+::placeholder,
+form input {
+  color: var(--text-input);
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-text);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+fieldset label {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.colb-gender label {
+  font-weight: normal;
+}
+
+form input {
+  border: 1px solid var(--border);
+  border-radius: 0.3rem;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.top {
+  margin-top: 1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    'A B'
+    'C C';
+  margin: 3rem 4rem;
+}
+
+.col-a {
+  grid-area: A;
+}
+
+.col-b {
+  grid-area: B;
+  margin-left: 3rem;
+}
+
+.col-c {
+  grid-area: C;
+}
+
+.cola-name {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cola-name input {
+  width: 60%;
+}
+
+.colb-gender {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 25%;
+}
+
+.colc-adress input {
+  padding-block: 1rem;
+}
+
+.colc-adress input:nth-child(1) {
+  margin-bottom: 1rem;
+}
+
+.colb-cpf input,
+.cola-date input,
+.cola-email input,
+.colb-tel input,
+.colc-adress input,
+.cola-city input,
+.colb-est input,
+.colc-cep input,
+.cola-health input,
+.colb-hnumber input {
+  width: 100%;
+}
+
+button {
+  margin: 2rem 4rem;
+  padding: 1rem 4.2rem;
+  border: 1px solid var(--border);
+  border-radius: 0.2rem;
+  color: var(--color-text);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+button:hover {
+ background-color: var(--color-text);
+ color: white;
+ transition: all 1s;
+ cursor: pointer;
+}
+
+input:hover {
+  transform: scale(1.01);
+  transition: all 500ms;
+  border-color: var(--color-text);
+
+}
+
+@media only screen and (max-width: 787px) {
+  
+  fieldset legend {
+    font-size: 1.8rem;
+    width: 50%;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      'A A'
+      'B B'
+      'C C';
+    margin: 3rem 4rem;
+  }
+  
+  .col-b {
+    margin-left: 0;
+  }
+
+  .col-a input {
+    margin-bottom: 2rem;
+  }
+
+}
